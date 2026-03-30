@@ -7,6 +7,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Card from "./Components/Cart/Card/Card";
 import axios from "axios";
 import Cart from "./Components/Cart/Cart";
+import GetStarted from "./Components/GetStarted/GetStarted";
+import Pricing from "./Components/Pricing/Pricing";
 
 const cardPromise = axios.get("cartData.json");
 function App() {
@@ -44,6 +46,8 @@ function App() {
         }
 
       </Suspense>
+      <GetStarted></GetStarted>
+      <Pricing></Pricing>
     </>
   );
 }
