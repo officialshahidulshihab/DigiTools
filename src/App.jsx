@@ -15,9 +15,14 @@ function App() {
   const [click, setClick] = useState([]);
 
   
-  const handleRemove=(id)=>{
-        const filterCart=click.filter(item => item !== id )
-        setClick(filterCart)
+  const handleRemove=()=>{
+        
+        setClick([])
+    }
+
+    const handleCheckout =(id)=>{
+      const resetCart=click.filter(item=> item ===id)
+      setClick(resetCart)
     }
 
   return (
@@ -35,7 +40,7 @@ function App() {
             click={click}
             setClick={setClick}
             cardPromise={cardPromise}
-          ></Card> : <Cart handleRemove={handleRemove} click={click} setClick={setClick} cardPromise={cardPromise}></Cart>
+          ></Card> : <Cart handleCheckout={handleCheckout} handleRemove={handleRemove} click={click} setClick={setClick} cardPromise={cardPromise}></Cart>
         }
 
       </Suspense>
