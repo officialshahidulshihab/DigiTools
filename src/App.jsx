@@ -1,30 +1,40 @@
+import { Suspense, useState } from "react";
+import "./App.css";
+import Banner from "./Components/Banner/Banner";
+import BannerButom from "./Components/Banner/BannerButtom/BannerButom";
+import CartTitle from "./Components/Cart/CartTitle/CartTitle";
+import Navbar from "./Components/Navbar/Navbar";
+import Card from "./Components/Cart/Card/Card";
+import axios from "axios";
+import Cart from "./Components/Cart/Cart";
 
-import { Suspense, useState } from 'react'
-import './App.css'
-import Banner from './Components/Banner/Banner'
-import BannerButom from './Components/Banner/BannerButtom/BannerButom'
-import CartTitle from './Components/Cart/CartTitle/CartTitle'
-import Navbar from './Components/Navbar/Navbar'
-import Card from './Components/Cart/Card/Card'
-import axios from 'axios'
-
+const cardPromise = axios.get("cartData.json");
 function App() {
-  const cardPromise=axios.get('cartData.json')
+  const [select, setSelected] = useState(true);
 
-  const [select, setSelected]=useState(true)
- 
+  const [click, setClick] = useState([]);
 
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <BannerButom></BannerButom>
-      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-      <CartTitle select={select} setSelected={setSelected}></CartTitle>
-          <Card cardPromise={cardPromise}></Card>
-         </Suspense>
+      <Suspense
+        fallback={<span className="loading loading-bars loading-xl"></span>}
+      >
+        <CartTitle select={select} setSelected={setSelected}></CartTitle>
+        {
+          select? 
+          <Card
+            click={click}
+            setClick={setClick}
+            cardPromise={cardPromise}
+          ></Card> : <Cart></Cart>
+        }
+
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

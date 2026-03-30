@@ -1,12 +1,11 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
-const CardDisplay = ({ product }) => {
+const CardDisplay = ({ product,click, setClick }) => {
   
   const features=product.features
-  console.log(features);
-
-console.log(product);
+  
+  
 
   return (
     <div >
@@ -22,11 +21,11 @@ console.log(product);
           </div>
           <ul className="space-y-2" >
             {
-                features.map(list=><li className="font-semibold flex items-center gap-2"><FaCheck className="text-green-400" />{list}</li>)
+                features.map((list, i)=><li key={i} className="font-semibold flex items-center gap-2"><FaCheck className="text-green-400" />{list}</li>)
             }
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block">Buy Now</button>
+            <button onClick={()=>setClick([...click, product.id])} className="btn btn-primary btn-block">{click.includes(product.id)? 'Added to cart' : 'Buy'}</button>
           </div>
         </div>
       </div>
