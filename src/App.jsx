@@ -14,6 +14,12 @@ function App() {
 
   const [click, setClick] = useState([]);
 
+  
+  const handleRemove=(id)=>{
+        const filterCart=click.filter(item => item !== id )
+        setClick(filterCart)
+    }
+
   return (
     <>
       <Navbar click={click}></Navbar>
@@ -25,11 +31,11 @@ function App() {
         <CartTitle click={click} select={select} setSelected={setSelected}></CartTitle>
         {
           select? 
-          <Card
+          <Card 
             click={click}
             setClick={setClick}
             cardPromise={cardPromise}
-          ></Card> : <Cart click={click} setClick={setClick} cardPromise={cardPromise}></Cart>
+          ></Card> : <Cart handleRemove={handleRemove} click={click} setClick={setClick} cardPromise={cardPromise}></Cart>
         }
 
       </Suspense>

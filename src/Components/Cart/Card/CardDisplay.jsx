@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
-const CardDisplay = ({ product,click, setClick }) => {
+const CardDisplay = ({ product,click, setClick , }) => {
   
   const features=product.features
   

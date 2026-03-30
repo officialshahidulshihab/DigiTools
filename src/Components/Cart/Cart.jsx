@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import CartDisplay from "./CartTitle/CartDisplay";
 
-const Cart = ({click, setClick, cardPromise}) => {
+const Cart = ({click, cardPromise, handleRemove}) => {
     const cardDataProcessCart=use(cardPromise)
      const cardCartData=cardDataProcessCart.data.cart
      
@@ -21,7 +21,7 @@ const Cart = ({click, setClick, cardPromise}) => {
           <div className="mx-auto mt-5 mb-2">
             <p className="text-9xl text-gray-400"><IoCartOutline /></p>
             <p className="text-gray-400 text-center">Your cart is empty</p>
-          </div> : cartData.map((prod, i)=><CartDisplay prod={prod} key={i}></CartDisplay>)
+          </div> : cartData.map((prod, i)=><CartDisplay handleRemove={handleRemove} prod={prod} key={i}></CartDisplay>)
           }
 
           
