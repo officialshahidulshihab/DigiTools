@@ -4,7 +4,7 @@
     "products": [
       {
         "id": "prod_001",
-        "name": "ResumeForge Pro",
+        "name": "ResumeForge",
         "description": "AI-powered resume builder with ATS optimization and expert templates to land your dream job faster.",
         "price": 12.99,
         "period": "monthly",
@@ -21,7 +21,7 @@
       },
       {
         "id": "prod_002",
-        "name": "PixelDrop Studio",
+        "name": "PixelDrop",
         "description": "An intuitive graphic design suite for creating stunning visuals, social media graphics, and brand assets.",
         "price": 19.99,
         "period": "monthly",
@@ -140,7 +140,7 @@
       },
       {
         "id": "prod_009",
-        "name": "CodeSnap Lifetime",
+        "name": "CodeSnap",
         "description": "Beautiful code screenshot tool loved by developers. Customize themes, fonts, and backgrounds for perfect social sharing.",
         "price": 24.00,
         "period": "one-time",

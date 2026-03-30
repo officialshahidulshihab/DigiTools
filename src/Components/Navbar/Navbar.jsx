@@ -3,7 +3,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 ">
+    <div className="">
       <div className="navbar bg-base-100 shadow-sm justify-between items-center">
         <div className="">
           <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-xl text-transparent bg-clip-text font-bold">DigiTools</span>
