@@ -1,0 +1,177 @@
+{
+  "cart": {
+    "currency": "USD",
+    "products": [
+      {
+        "id": "prod_001",
+        "name": "ResumeForge Pro",
+        "description": "AI-powered resume builder with ATS optimization and expert templates to land your dream job faster.",
+        "price": 12.99,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+          "100+ professional templates",
+          "ATS optimization engine",
+          "Export to PDF & DOCX",
+          "AI content suggestions",
+          "Cover letter builder"
+        ],
+        "icon": "📄"
+      },
+      {
+        "id": "prod_002",
+        "name": "PixelDrop Studio",
+        "description": "An intuitive graphic design suite for creating stunning visuals, social media graphics, and brand assets.",
+        "price": 19.99,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+          "10,000+ design assets",
+          "Background remover",
+          "Brand kit manager",
+          "Team collaboration (up to 5)",
+          "Cloud storage 50GB"
+        ],
+        "icon": "🎨"
+      },
+      {
+        "id": "prod_003",
+        "name": "FlowMind AI",
+        "description": "Smart project management tool that uses AI to auto-prioritize tasks, predict deadlines, and streamline your workflow.",
+        "price": 9.99,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+          "AI task prioritization",
+          "Kanban & Gantt views",
+          "Time tracking built-in",
+          "Slack & Notion integrations",
+          "Unlimited projects"
+        ],
+        "icon": "🧠"
+      },
+      {
+        "id": "prod_004",
+        "name": "VaultForm",
+        "description": "Secure, GDPR-compliant form builder with advanced logic, file uploads, and real-time analytics dashboard.",
+        "price": 49.00,
+        "period": "yearly",
+        "tag": "Best Value",
+        "tagType": "best-value",
+        "features": [
+          "Drag-and-drop form builder",
+          "Conditional logic",
+          "File & image uploads",
+          "Response analytics",
+          "Webhook & Zapier support"
+        ],
+        "icon": "📋"
+      },
+      {
+        "id": "prod_005",
+        "name": "InboxZero",
+        "description": "AI email assistant that drafts replies, auto-sorts your inbox, and summarizes long threads in one click.",
+        "price": 7.99,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+          "AI reply drafting",
+          "Smart inbox categories",
+          "Thread summarization",
+          "Scheduled send",
+          "Gmail & Outlook support"
+        ],
+        "icon": "✉️"
+      },
+      {
+        "id": "prod_006",
+        "name": "ChartBase",
+        "description": "No-code data visualization tool. Connect your spreadsheets or databases and turn raw data into beautiful, shareable charts.",
+        "price": 149.00,
+        "period": "one-time",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+          "20+ chart types",
+          "CSV, Excel & Google Sheets import",
+          "Embeddable live charts",
+          "Dark & light themes",
+          "Lifetime updates included"
+        ],
+        "icon": "📊"
+      },
+      {
+        "id": "prod_007",
+        "name": "ScriptGenius",
+        "description": "AI video script writer built for YouTubers, marketers, and course creators. Generate hooks, outlines, and full scripts instantly.",
+        "price": 14.99,
+        "period": "monthly",
+        "tag": "Trending",
+        "tagType": "trending",
+        "features": [
+          "AI full script generation",
+          "Hook & CTA library",
+          "Tone & style customizer",
+          "SEO keyword integration",
+          "Export to Teleprompter"
+        ],
+        "icon": "🎬"
+      },
+      {
+        "id": "prod_008",
+        "name": "LinkNest",
+        "description": "All-in-one link-in-bio page builder and URL shortener with click analytics and custom domain support.",
+        "price": 29.00,
+        "period": "yearly",
+        "tag": "Best Seller",
+        "tagType": "best-seller",
+        "features": [
+          "Custom branded domains",
+          "Animated bio pages",
+          "URL shortener included",
+          "Click & geo analytics",
+          "QR code generator"
+        ],
+        "icon": "🔗"
+      },
+      {
+        "id": "prod_009",
+        "name": "CodeSnap Lifetime",
+        "description": "Beautiful code screenshot tool loved by developers. Customize themes, fonts, and backgrounds for perfect social sharing.",
+        "price": 24.00,
+        "period": "one-time",
+        "tag": "Limited Offer",
+        "tagType": "limited",
+        "features": [
+          "50+ syntax themes",
+          "Custom backgrounds & padding",
+          "Watermark branding",
+          "1-click Twitter/X share",
+          "VSCode extension included"
+        ],
+        "icon": "💻"
+      },
+      {
+        "id": "prod_010",
+        "name": "VoiceNote AI",
+        "description": "Record meetings, lectures, or ideas and get instant AI-generated transcripts, summaries, and action items.",
+        "price": 99.00,
+        "period": "yearly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+          "Real-time transcription",
+          "Speaker identification",
+          "AI meeting summaries",
+          "Action item extraction",
+          "Supports 30+ languages"
+        ],
+        "icon": "🎙️"
+      }
+    ]
+  }
+}
