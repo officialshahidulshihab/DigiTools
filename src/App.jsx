@@ -16,20 +16,20 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar click={click}></Navbar>
       <Banner></Banner>
       <BannerButom></BannerButom>
       <Suspense
         fallback={<span className="loading loading-bars loading-xl"></span>}
       >
-        <CartTitle select={select} setSelected={setSelected}></CartTitle>
+        <CartTitle click={click} select={select} setSelected={setSelected}></CartTitle>
         {
           select? 
           <Card
             click={click}
             setClick={setClick}
             cardPromise={cardPromise}
-          ></Card> : <Cart></Cart>
+          ></Card> : <Cart click={click} setClick={setClick} cardPromise={cardPromise}></Cart>
         }
 
       </Suspense>

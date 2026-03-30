@@ -1,7 +1,7 @@
 import React from "react";
 import { IoCartOutline } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({click}) => {
   return (
     <div className="">
       <div className="navbar bg-base-100 shadow-sm justify-between items-center">
@@ -18,7 +18,7 @@ const Navbar = () => {
        </div>
 
        <div className="flex justify-between items-center gap-4">
-        <p><IoCartOutline></IoCartOutline></p>
+        <p className="flex items-center"><IoCartOutline></IoCartOutline><sup className="">{click.length}</sup></p>
         <p>Login</p>
         <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa]  rounded-2xl text-white">Get Started</button>
        
