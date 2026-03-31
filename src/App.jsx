@@ -9,6 +9,8 @@ import axios from "axios";
 import Cart from "./Components/Cart/Cart";
 import GetStarted from "./Components/GetStarted/GetStarted";
 import Pricing from "./Components/Pricing/Pricing";
+import ReadyToTransfrom from "./Components/ReadyToTrasfrom/ReadyToTransfrom";
+import Footer from "./Components/Footer/Footer";
 
 const cardPromise = axios.get("cartData.json");
 
@@ -50,6 +52,8 @@ function App() {
       </Suspense>
       <GetStarted></GetStarted>
       <Pricing pricingPromise={pricingPromise}></Pricing>
+      <ReadyToTransfrom></ReadyToTransfrom>
+      <Footer></Footer>
     </>
   );
 }
