@@ -11,6 +11,8 @@ import GetStarted from "./Components/GetStarted/GetStarted";
 import Pricing from "./Components/Pricing/Pricing";
 
 const cardPromise = axios.get("cartData.json");
+
+const pricingPromise= axios.get("pricing.json")
 function App() {
   const [select, setSelected] = useState(true);
 
@@ -47,7 +49,7 @@ function App() {
 
       </Suspense>
       <GetStarted></GetStarted>
-      <Pricing></Pricing>
+      <Pricing pricingPromise={pricingPromise}></Pricing>
     </>
   );
 }
