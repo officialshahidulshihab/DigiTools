@@ -16,8 +16,8 @@ const CardDisplay = ({ product,click, setClick , }) => {
             <span className="badge badge-xs badge-warning">{product.tag}</span>
           </div>
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl font-bold">{product.name}</h2>
-            <span className="text-xl">${product.price}/{product.period}</span>
+            <h2 className=" text-[20px]  md:text-3xl font-bold">{product.name}</h2>
+            <span className="text-[16px]  md:text-xl">${product.price}/{product.period}</span>
           </div>
           <ul className="space-y-2" >
             {

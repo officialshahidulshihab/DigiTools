@@ -10,7 +10,7 @@ const Card = ({cardPromise, click, setClick,}) => {
  
 
     return (
-        <div className="grid grid-cols-3 w-11/12 mx-auto gap-5">
+        <div className="grid grid-cols-1  md:grid-cols-3 w-11/12 mx-auto gap-5">
             {
                 cardProducts.map(product=>{
                    return <CardDisplay  setClick={setClick} click={click} product={product} key={product.id} cardCurrency={cardCurrency} ></CardDisplay>
