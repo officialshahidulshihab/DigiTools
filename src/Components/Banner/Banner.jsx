@@ -5,19 +5,19 @@ import bannerImg from '../../assets/products/banner.png'
 
 const Banner = () => {
   return (
-    <div className="w-11/12 mx-auto mt-15 flex justify-between items-center">
+    <div className="w-11/12 mx-auto mt-15 flex flex-col  md:flex md:flex-row justify-between items-center">
       <div className="">
         <div className="badge badge-soft badge-primary">
           <FaRegCircleDot /> New: AI-Powered Tools Available
         </div>
         <div className="space-y-2">
-          <h1 className="text-[60px] font-bold">
-            Supercharge Your <br />
+          <h1 className="text-[32px] md:text-[60px] font-bold w-full md:w-175">
+            Supercharge Your 
             Digital Workflow
           </h1>
-          <p className="text-[#627382]">
-            Access premium AI tools, design assets, templates, and productivity <br />
-            software—all in one place. Start creating faster today. <br /> Explore
+          <p className="text-[#627382] w-full md:w-100 ">
+            Access premium AI tools, design assets, templates, and productivity 
+            software—all in one place. Start creating faster today.  Explore
             Products
           </p>
           <div className="space-x-2 mt-4">
@@ -27,7 +27,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div>
+      <div className="w-full md:w-1/2">
         <img src={bannerImg}alt="" />
       </div>
     </div>
