@@ -28,7 +28,7 @@ const Banner = () => {
       </div>
 
       <div className="w-full md:w-1/2">
-        <img src={bannerImg}alt="" />
+        <img className="w-full" src={bannerImg}alt="" />
       </div>
     </div>
   );

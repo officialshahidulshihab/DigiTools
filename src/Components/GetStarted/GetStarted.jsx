@@ -17,7 +17,7 @@ const GetStarted = () => {
             </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-5 mb-5'>
-                <div className='bg-base-100 p-4 md:p-7 border border-base-300 rounded-lg shadow-sm h-75 space-y-3'>
+                <div className='bg-base-100 p-4 md:p-7 border border-base-300 rounded-lg shadow-sm md:h-75 space-y-3'>
                     <div className='flex justify-end items-center '>
                         <p className='text-center bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full w-7 h-7'>01</p>
     
@@ -37,7 +37,7 @@ const GetStarted = () => {
                     <p className='text-[#627382] text-center'>Browse our catalog and select the tools <br /> that fit your needs.</p>
 
                 </div>
-                <div className='bg-base-100 h-75 space-y-3 p-4 md:p-7 border border-base-300 rounded-lg shadow-sm'>
+                <div className='bg-base-100 md:h-75 space-y-3 p-4 md:p-7 border border-base-300 rounded-lg shadow-sm'>
                     <div className='flex justify-end items-center '>
                         <p className='text-center bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full w-7 h-7'>03</p>
     
