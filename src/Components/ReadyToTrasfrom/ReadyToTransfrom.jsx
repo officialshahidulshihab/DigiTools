@@ -4,7 +4,7 @@ const ReadyToTransfrom = () => {
     return (
         <div className='bg-linear-to-r from-[#4f39f6] to-[#9514fa] p-8 mt-5 '>
             <div className='w-11/12 mx-auto space-y-4'>
-            <p className='text-white text-[35px] text-center font-bold'>Ready to Transform Your Workflow?</p>
+            <p className='text-white text-[24px] md:text-[35px] text-center font-bold'>Ready to Transform Your Workflow?</p>
             <p className='text-white text-center'>Join thousands of professionals who are already using Digitools to work smarter. <br /> Start your free trial today.</p>
 
             <div className='flex justify-center items-center gap-3'>

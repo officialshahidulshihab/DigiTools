@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
+import { toast } from 'react-toastify'
 
 const CardDisplay = ({ product,click, setClick , }) => {
   
@@ -25,7 +26,12 @@ const CardDisplay = ({ product,click, setClick , }) => {
             }
           </ul>
           <div className="mt-6">
-            <button onClick={()=>setClick([...click, product.id])} className="btn btn-primary btn-block">{click.includes(product.id)? 'Added to cart' : 'Buy'}</button>
+            <button onClick={()=>{
+              if (!click.includes(product.id)){
+              setClick([...click, product.id])
+              toast.success("Added to cart!")
+              
+              }}} className="btn btn-primary btn-block">{click.includes(product.id)? 'Added to cart' : 'Buy'}</button>
           </div>
         </div>
       </div>

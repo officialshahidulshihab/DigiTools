@@ -5,12 +5,12 @@ import { FaSquareFacebook, FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="bg-[#101727]">
-      <div className=" w-11/12 mx-auto p-8 grid grid-cols-5 gap-4">
-        <div>
+      <div className=" w-11/12 mx-auto p-8 grid grid-cols-2  md:grid-cols-5 gap-4">
+        <div className="col-span-2 md:col-span-1">
           <p className="text-white text-[26px] font-bold">DigiTools</p>
           <p className="text-white">
-            Premium digital tools for creators, <br /> professionals, and
-            businesses. Work smarter <br /> with our suite of powerful tools.
+            Premium digital tools for creators,professionals, and
+            businesses. Work smarter with our suite of powerful tools.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Footer = () => {
 
       <div className=" w-11/12 mx-auto">
       <div className="divider divider-neutral"></div>
-      <div className="flex justify-between items-center p-2">
+      <div className="flex flex-col md:flex-row items-center md:justify-between gap-3 justify-between  p-2">
         <div>
             <p className="text-[#FAFAFA]">© 2026 Digitools. All rights reserved.</p>
         </div>

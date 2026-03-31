@@ -11,6 +11,9 @@ import GetStarted from "./Components/GetStarted/GetStarted";
 import Pricing from "./Components/Pricing/Pricing";
 import ReadyToTransfrom from "./Components/ReadyToTrasfrom/ReadyToTransfrom";
 import Footer from "./Components/Footer/Footer";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { toast } from 'react-toastify'
 
 const cardPromise = axios.get("cartData.json");
 
@@ -21,14 +24,18 @@ function App() {
   const [click, setClick] = useState([]);
 
   
-  const handleRemove=()=>{
+  const handleRemove=(id)=>{
+    const filterCheck=click.filter(item => item !==id)
         
-        setClick([])
+        setClick(filterCheck)
+        toast.error("Item removed!")
+
     }
 
-    const handleCheckout =(id)=>{
-      const resetCart=click.filter(item=> item ===id)
-      setClick(resetCart)
+    const handleCheckout =()=>{
+      
+      setClick([])
+      toast.success("Order placed!")
     }
 
   return (
@@ -54,6 +61,7 @@ function App() {
       <Pricing pricingPromise={pricingPromise}></Pricing>
       <ReadyToTransfrom></ReadyToTransfrom>
       <Footer></Footer>
+      <ToastContainer />
     </>
   );
 }

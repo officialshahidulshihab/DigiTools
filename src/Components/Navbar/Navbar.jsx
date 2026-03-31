@@ -5,8 +5,8 @@ import { IoCartOutline } from "react-icons/io5";
 const Navbar = ({ click }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="">
-      <div className="navbar bg-base-100 shadow-sm justify-between items-center">
+    <div className="relative w-full ">
+      <div className="navbar bg-base-100 shadow-sm justify-between items-center max-w-full">
         <div className="flex  items-center gap-2">
           <span className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             <GiHamburgerMenu />
@@ -16,7 +16,7 @@ const Navbar = ({ click }) => {
           </span>
         </div>
         {menuOpen && (
-          <div className="md:hidden absolute top-11 flex flex-col gap-3 p-4 bg-base-100">
+          <div className="md:hidden absolute top-11 left-0 w-full z-50 flex flex-col gap-3 p-4 bg-base-100">
             <a href="">Products</a>
             <a href="">Features</a>
             <a href="">Pricing</a>
@@ -29,7 +29,7 @@ const Navbar = ({ click }) => {
           </div>
         )}
 
-        <div className="hidden md:flex gap-4">
+        <div className="hidden md:flex gap-2">
           <a className="text-[#101727] font-semibold" href="">
             Products
           </a>
